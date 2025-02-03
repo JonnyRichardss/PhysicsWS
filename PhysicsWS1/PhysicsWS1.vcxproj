@@ -128,13 +128,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DiceRolling.cpp" />
+    <ClCompile Include="GameClock.cpp" />
+    <ClCompile Include="GameOfLife.cpp" />
     <ClCompile Include="PhysicsWS1.cpp" />
+    <ClCompile Include="RecurringCharacterCounter.cpp" />
     <ClCompile Include="ScoreKeeping.cpp" />
     <ClCompile Include="StarMatrix.cpp" />
     <ClCompile Include="WordFunneling.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DiceRolling.h" />
+    <ClInclude Include="GameClock.h" />
+    <ClInclude Include="GameOfLife.h" />
+    <ClInclude Include="RecurringCharacterCounter.h" />
     <ClInclude Include="ScoreKeeping.h" />
     <ClInclude Include="StarMatrix.h" />
     <ClInclude Include="WordFunneling.h" />

@@ -30,6 +30,15 @@
     <ClCompile Include="ScoreKeeping.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="RecurringCharacterCounter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOfLife.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameClock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="StarMatrix.h">
@@ -42,6 +51,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ScoreKeeping.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RecurringCharacterCounter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOfLife.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameClock.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

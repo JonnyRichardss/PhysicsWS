@@ -8,6 +8,20 @@
 #include "WordFunneling.h"
 #include "DiceRolling.h"
 #include "ScoreKeeping.h"
+#include "RecurringCharacterCounter.h"
+#include "GameOfLife.h"
+
+
+
+static float PingPong(float t, float length) {
+    t = fmod(t ,(length * 2));
+    if (t > length) {
+        return (length * 2) - t;
+    }
+    else {
+        return t;
+    }
+}
 static void RunStarMatrix() {
     printf("Enter Num lines:");
     //no input checking lol
@@ -51,12 +65,26 @@ static void RunScoreKeeping() {
     ScoreKeeping s;
     s.CalculateScore(input);
 }
+static void RunCharCounter() {
+    std::string input;
+    printf("input:");
+    std::cin >> input;
+    RecurringCharacterCounter r;
+    r.printRecurringChar(input);
+}
+static void RunGameOfLife() {
+    GameOfLife g;
+    g.RunGame(true, false);
+}
 int main()
 {
     srand(time(NULL));
-
     //RunStarMatrix();
-    for (;;) {
-        RunScoreKeeping();
-    }
+    GameOfLife g;
+    g.RunGame(false, false);
+    //float a = PingPong(2, 5);
+    //float b = PingPong(7, 5);
+    //float c = PingPong(11, 5);
+    //printf("A: %f, B: %f, C: %f", a, b, c);
+    
 }
